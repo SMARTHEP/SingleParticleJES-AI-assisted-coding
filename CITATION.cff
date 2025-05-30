@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "SmartHEP"
+    given-names: "Collaboration"
+title: "SmartHEP SingleParticleJES"
+version: 0.1.0
+date-released: 2025-05-30
+url: "https://github.com/smarthep/singleparticlejes"
+repository-code: "https://github.com/smarthep/singleparticlejes"
+license: Apache-2.0
+abstract: >-
+  High Energy Physics Analysis Package for Single Particle Jet Energy Scale calibration in ATLAS.
+  This package provides tools for analyzing single particle jet energy scale calibration in ATLAS
+  using ROOT's RDataFrame for efficient data processing.
+keywords:
+  - high-energy-physics
+  - atlas
+  - jet-energy-scale
+  - calibration
+  - root
+  - rdataframe

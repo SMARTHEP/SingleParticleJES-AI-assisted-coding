@@ -1,0 +1,427 @@
+Directory structure:
+└── smarthep-singleparticlejes-ai-assisted-coding/
+    ├── README.md
+    ├── LICENSE
+    └── SimpleResponseAlgoRDF_noMatching.py
+
+================================================
+FILE: README.md
+================================================
+# SingleParticleJES-AI-assisted-coding
+Test of sustainable software AI-assisted vs expert-assisted, with P. Jawahar (ESR)
+
+
+
+================================================
+FILE: LICENSE
+================================================
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "[]"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+
+
+================================================
+FILE: SimpleResponseAlgoRDF_noMatching.py
+================================================
+import ROOT
+import sys
+import os
+ROOT.xAOD.Init(); 
+from xAODDataSource import Helpers
+
+ROOT.xAOD.CaloClusterAuxContainer_v2()
+ROOT.xAOD.TruthParticleAuxContainer_v1()
+# Generated using Experimental Gemini 2.5 on 28/04/2025
+
+# --- Configuration ---
+# Use an environment variable or hardcode the path to your AOD file
+# Make sure this file exists and is accessible!
+# You can use wildcards like "path/to/my/data*.root"
+# or provide a list of filenames: ["file1.root", "file2.root"]
+#input_files = os.getenv("AOD_FILE_PATH", "path/to/your/AOD.pool.root")
+input_files="user.cyoung.43212508.EXT0._000438.pool.root"
+# The standard TTree name in ATLAS xAOD files
+tree_name = "CollectionTree"
+# Output file for histograms
+output_filename = "analysis_output.root"
+
+output_file = ROOT.TFile.Open(output_filename, "RECREATE")
+if not output_file or output_file.IsZombie():
+    print(f"ERROR: Could not open output file {output_filename}")
+    sys.exit(1)
+
+output_file.cd()
+# This would be useful if we were using the full EDM, but we're just reading the xAOD
+# Check if ROOT can find the xAOD classes (a basic check for asetup)
+#try:
+#ROOT.xAOD.CaloCalTopoClustersAux
+#except AttributeError:
+#     print("ERROR: Could not find ATLAS xAOD classes (e.g., xAOD.JetContainer_v1).")
+#     print("       Did you forget to run 'asetup <YourAtlasRelease>' first?")
+#     sys.exit(1)
+
+
+# --- RDataFrame Analysis ---
+
+# Enable Implicit Multi-Threading (recommended for performance)
+# ROOT will automatically use multiple cores if available.
+ROOT.EnableImplicitMT()
+print(f"Implicit Multi-Threading enabled using {ROOT.GetThreadPoolSize()} threads.")
+
+# Create the RDataFrame
+# It points to the TTree 'CollectionTree' in the specified input file(s)
+print(f"Processing file(s): {input_files}")
+try:
+    df = Helpers.MakexAODDataFrame(input_files) #ROOT.RDataFrame(tree_name, input_files)
+except Exception as e:
+    print(f"ERROR: Failed to create RDataFrame. Check file path and integrity.")
+    print(e)
+    sys.exit(1)
+
+# Get the initial number of events (triggers the first event loop pass if no other action taken yet)
+n_total_events = df.Count().GetValue()
+if n_total_events == 0:
+    print("ERROR: Input file(s) contain no events in the TTree '{tree_name}'.")
+    sys.exit(1)
+print(f"Total events in TTree: {n_total_events}")
+
+#for debugging purposes
+#print("Getting column names:")
+#print(df.GetColumnNames())
+
+
+# --- Define Variables and Apply Filters ---
+
+cluster_collection = "CaloCalTopoClusters"
+particle_collection = "TruthParticles"
+
+# Define a column 'nClusters' holding the size of the cluster collection
+df_clusters_and_particles = df.Define("nClusters", f"{cluster_collection}.size()")
+df_clusters_and_particles = df_clusters_and_particles.Define("nParticles", f"{particle_collection}.size()")
+
+# Filter events: require at least 1 particle and 1 cluster in the event
+df_filtered = df_clusters_and_particles.Filter("nClusters >= 1", "At least 1 cluster")
+df_filtered = df_filtered.Filter("nParticles >= 1", "At least 1 particle")
+
+# Filter more: make sure that there is at least one particle that we want (a pion, PDGID=211)
+df_filtered = df_filtered.Define("pdgId_lead",f"{particle_collection}.at(0)->pdgId()")
+df_filtered_PDGID = df_filtered.Filter("pdgId_lead==211","At least 1 pion")
+# Define the pT of the leading cluster (assuming clusters are pt-sorted, common but check!)
+# ATLAS stores energies/momenta in MeV, so divide by 1000 for GeV.
+# Accessing elements of the xAOD container directly:
+df_defined = df_filtered_PDGID.Define("leading_cluster_e", f"{cluster_collection}.at(0)->rawE() / 1000.0")
+
+
+# Define code for response, without including matching
+# https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=8996766&fileOId=8996773, page 32:
+# This algorithm iterates over all the events in the NTuple, and for each event iterates over all the truth particles. 
+# For each truth particle it geometrically matches all reconstructed clusters within DeltaR = 0.2  to that truth particle. 
+# The four-vectors of the clusters matched are then summed into one four-vector. 
+# Finally, the pT response is then calculated from the pT of the combined cluster four-vector and the pT of the truth particle. 
+# What we are doing here: taking the leading pion as reference and the leading cluster as probe
+# This is justified because there is a reasonable correlation between the energy, eta, phi of these
+
+response_code = f"""
+
+    // Check if there are indeed at least 2 clusters (filter should ensure this, but defensive coding)
+    if ({cluster_collection}.size() < 2) {{
+        return -1.0f; // Return a dummy value
+    }}
+    
+    auto& clusters = {cluster_collection}; // Reference for convenience
+    auto& particles = {particle_collection}; // 
+    
+    // Create Lorentz vectors for the leading cluster and particle (assuming pt-sorted)
+    // Since LorentzVector wants pT and not energy, we'll give it pT
+
+    float cluster_pt = sqrt(clusters.at(0)->rawE()*clusters.at(0)->rawE() - clusters.at(0)->rawM()*clusters.at(0)->rawM())/TMath::CosH(clusters.at(0)->rawEta());
+
+    ROOT::Math::PtEtaPhiMVector cluster_lv(cluster_pt, clusters.at(0)->rawEta(), clusters.at(0)->rawPhi(), clusters.at(0)->rawM());
+    ROOT::Math::PtEtaPhiMVector particle_lv(particles.at(0)->pt(), particles.at(0)->eta(), clusters.at(0)->phi(), clusters.at(0)->m());
+
+    
+    // pT response 
+    float response = cluster_lv.Pt()/particle_lv.Pt();
+    return response;
+
+"""
+
+df_defined = df_defined.Define("response", response_code)
+df_defined = df_defined.Define("lead_particle_pt", f"{particle_collection}.at(0)->pt()/1000.")
+df_defined = df_defined.Define("lead_particle_eta", f"{particle_collection}.at(0)->eta()")
+
+# --- Book Histograms ---
+# Histograms are booked here, but only filled when the event loop is triggered later.
+
+# Histogram model: (name, title; x-axis label; y-axis label, nbins, xlow, xhigh)
+h_nClusters_model = ROOT.RDF.TH1DModel("h_nClusters", "Number of Clusters;N_{Clusters};Events", 20, -0.5, 19.5)
+h_nParticles_model = ROOT.RDF.TH1DModel("h_nParticles", "Number of Particles;N_{Particles};Events", 20, -0.5, 19.5)
+h_leading_cluster_e_model = ROOT.RDF.TH1DModel("h_leading_cluster_e", "Leading Cluster E;E^{lead cluster} [GeV];Events", 100, 0, 500)
+h_PDGIDs_model = ROOT.RDF.TH1DModel("h_PDGIDs", "Leading Cluster PDGID;PDGID^{lead cluster};Events", 1000, 0, 1000)
+h_inclusive_response_model = ROOT.RDF.TH1DModel("h_inclusive_response", "Response (inclusive); p_{T,cluster}/p_{T,particle};Events", 100, 0, 3)
+h_3d_response_model = ROOT.RDF.TH3DModel("h_response", "Response (binned); p_{T,cluster}/p_{T,particle},p_{T,particle},eta;Events", 50,0,2, 100,0,500, 60,-3,3)
+
+# Book the histograms using the defined columns
+h_nClusters = df_clusters_and_particles.Histo1D(h_nClusters_model, "nClusters") # Booked on df_clusters_and_particles (before filter)
+h_nParticles = df_clusters_and_particles.Histo1D(h_nParticles_model, "nParticles") # Booked on df_clusters_and_particles (before filter)
+h_PDGIDs = df_filtered_PDGID.Histo1D(h_PDGIDs_model, "pdgId_lead") # Booked on df_clusters_and_particles (before filter)
+h_leading_cluster_e = df_defined.Histo1D(h_leading_cluster_e_model, "leading_cluster_e") # Booked on df_defined (after filter)
+h_inclusive_response = df_defined.Histo1D(h_inclusive_response_model, "response") # Booked on df_defined (after filter)
+h_3d_response = df_defined.Histo3D(h_3d_response_model, "response","lead_particle_pt","lead_particle_eta") # Booked on df_defined (after filter)
+
+h_nClusters.SetDirectory(output_file);
+h_nParticles.SetDirectory(output_file);
+h_PDGIDs.SetDirectory(output_file);
+h_leading_cluster_e.SetDirectory(output_file);
+h_inclusive_response.SetDirectory(output_file);
+h_3d_response.SetDirectory(output_file);
+
+# --- Trigger Execution and Save Output ---
+
+# Accessing the histograms' values or using Snapshot triggers the actual event loop.
+# RDataFrame processes events lazily only when results are requested.
+
+print("Event loop running...")
+
+# You can also generate a report on filter efficiencies, etc.
+report = df_defined.Report()
+
+# Optionally, save selected data to a new, smaller ROOT file (a "Snapshot")
+# Specify the columns you want to keep.
+# Note: Snapshotting complex xAOD objects directly might require extra steps or helper libraries.
+#       It's often easier to snapshot derived primitive types.
+# columns_to_save = ROOT.std.vector['string'](["runNumber", "eventNumber", "leading_cluster_pt", "response"])
+# df_defined.Snapshot("SelectedEventsTree", "snapshot_output.root", columns_to_save)
+# print("Snapshot file created: snapshot_output.root")
+
+
+# Save histograms to the output file
+print(f"Saving histograms to: {output_filename}")
+
+output_file.cd()
+
+# Calling GetValue() here ensures the loop ran and histograms are filled *before* writing
+h_nClusters_ptr = h_nClusters.GetValue()
+h_nParticles_ptr = h_nParticles.GetValue()
+h_PDGIDs_ptr = h_PDGIDs.GetValue()
+h_leading_cluster_e_ptr = h_leading_cluster_e.GetValue()
+h_inclusive_response_ptr = h_inclusive_response.GetValue()
+h_3d_response_ptr = h_3d_response.GetValue()
+
+h_nClusters_ptr.Write()
+h_nParticles_ptr.Write()
+h_PDGIDs_ptr.Write()
+h_leading_cluster_e_ptr.Write()
+h_inclusive_response_ptr.Write()
+h_3d_response_ptr.Write()
+
+output_file.Close()
+print("Histograms saved.")
+
+# Print the report
+print("\n--- Analysis Report ---")
+report.Print()
+print("---------------------\n")
+
+print("Analysis finished successfully.")
+
+
